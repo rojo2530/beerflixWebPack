@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BeerFlix</title>
+	<link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> -->
+	<!-- <link rel="stylesheet" href="/css/loader-alt.css">
+	<link rel="stylesheet" href="/css/hero.css">
+	<link rel="stylesheet" href="/css/detail.css"> -->
+	<!-- <link rel="stylesheet" href="/css/style.css"> -->
+</head>
+<body>
+	<nav class="navbar ">
+		<div class="navbar-brand">
+			<a class="navbar-item " href="/">
+				<span class="bd-emoji">🍺</span> &nbsp;<span class="title-logo">BeerFlix</span>
+			</a>
+			<a class="navbar-item is-hidden-desktop" href="https://github.com/rojo2530" target="_blank">
+				<span class="icon" style="color: #333;">
+					<i class="fa fa-github"></i>
+				</span>
+			</a>
+			<a class="navbar-item is-hidden-desktop" href="https://twitter.com/pikota79" target="_blank">
+				<span class="icon" style="color: #55acee;">
+					<i class="fa fa-twitter"></i>
+				</span>
+			</a>
+			<div class="navbar-burger burger" data-target="navMenubd-example">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div id="navMenubd-example" class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item " href="/">
+					<span class="bd-emoji">🏠</span> &nbsp;Home
+				</a>
+			</div>
+			<!-- este form es para que en moviles aparezca buscar (por ejemplo iPhone) en vez de Intro-->
+			<form id="form-search" action=".">
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="field">
+							<div class="control">
+								<input class="input is-primary" id="search-date" name="date-select" type="date"
+									placeholder="Select a date..">
+							</div>
+						</div>
+					</div>
+					<div class="navbar-item">
+						<div class="field">
+							<div class="control">
+								<input class="input is-primary" id="search" type="search" placeholder="Search a beer..">
+							</div>
+						</div>
+					</div>
+					<div class="navbar-item">
+						<div class="field is-grouped">
+							<p class="control">
+								<button type="submit" class="button is-primary">
+									<span class="icon">
+										<i class="fa fa-search"></i>
+									</span>
+									<span>Search</span>
+									</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</nav>
+	<div class="hero is-warning has-background">
+		<img class="hero-background is-transparent" src="src/img/beer-banner.jpg"
+			srcset="src/img/beer-banner-mobile-op.jpg 600w, src/img/beer-banner-tablet-op.jpg 979w, src/img/beer-banner-op.jpg 1920w"
+			sizes="(max-width: 420px) 600px, (max-width: 768px) 979px, 1920px" alt="banner_beer">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					Beers
+				</h1>
+				<h3 class="subtitle">
+					Like Netflix
+				</h3>
+			</div>
+		</div>
+	</div>
+	<main>
+	
+	</main>
+	<!-- <nav class="pagination" role="navigation" aria-label="pagination">
+		<a class="pagination-previous">Previous</a>
+		<a class="pagination-next">Next page</a>
+		<ul class="pagination-list">
+			<li>
+				<a class="pagination-link is-current" aria-label="Goto page 1">1</a>
+			</li>
+			<li>
+				<span class="pagination-ellipsis">&hellip;</span>
+			</li>
+			<li>
+				<a class="pagination-link" aria-label="Goto page 45">5</a>
+			</li>
+			<li>
+				<a class="pagination-link" aria-label="Page 46" aria-current="page">7</a>
+			</li>
+			<li>
+				<a class="pagination-link" aria-label="Goto page 47">8</a>
+			</li>
+		</ul>
+	</nav> -->
+
+	<footer class="footer is-primary">
+		<div class="container">
+			<div class="content is-centered">
+				<p>
+					<strong>Design</strong> by <a href="https://www.linkedin.com/in/josecantosgalvan/">Jose Cantos</a>.
+				</p>
+				<p>
+					<a class="icon is-hidden-mobile" href="https://github.com/rojo2530">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="icon is-hidden-mobile" href="https://twitter.com/pikota79">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</p>
+				<p>
+					<a title="Hecho con Bulma" aria-label="Hecho con Bulma" target="_blank" rel="noopener nofollow" href="https://bulma.io">
+						<img src="src/img/made-with-bulma.png" alt="Made with Bulma" width="128" height="24" aria-hidden="true">
+					</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<div class="loading hide">
+		<div class='uil-ring-css' style='transform:scale(0.79);'>
+			<div></div>
+		</div>
+	</div>
+
+	<!-- <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="module" srch="/js/storage.js"></script>
+	<script type="module" src="/js/ui.js"></script>
+	<script type="module" src="/js/navbar.js"></script>
+	<script type="module" src="/js/beers.js"></script>
+	<script type="module" src="/js/routes.js"></script> -->
+	<!-- <script src="src/js/index.js"></script> -->
+</body>
+</html>
